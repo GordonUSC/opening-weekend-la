@@ -6,21 +6,21 @@
   var KICKOFF_USA = new Date("2026-06-12T18:00:00-07:00");
 
   var EVENTS = [
-    { t: "2026-06-11T09:00:00-07:00", now: "Early entry · US Soccer House, Venice", d: "Opening Ceremonies at 9. Claim the spot by the main screen.", href: "thursday.html" },
-    { t: "2026-06-11T10:30:00-07:00", now: "Boardwalk + coffee", d: "Intelligentsia, Eggslut, or Menotti's. Doors already yours.", href: "thursday.html" },
+    { t: "2026-06-11T09:30:00-07:00", now: "Boardwalk + coffee", d: "Intelligentsia, Eggslut, or Menotti's. Venice before the crowds.", href: "thursday.html" },
+    { t: "2026-06-11T11:00:00-07:00", now: "Early entry · US Soccer House, Venice", d: "Exact entry time is on the Universe QR email. General doors at noon. Claim the spot by the main screen.", href: "thursday.html" },
     { t: "2026-06-11T12:00:00-07:00", now: "LIVE · Mexico v South Africa", d: "The opener at the Azteca. Scout Giménez and Álvarez.", href: "thursday.html", live: true },
     { t: "2026-06-11T14:00:00-07:00", now: "Final whistle · Venice afternoon", d: "Boardwalk, Venice sign photo, send Caryn a picture.", href: "thursday.html" },
-    { t: "2026-06-11T19:00:00-07:00", now: "AO Night Before Party + Son Heung-Min", d: "The Meeting Spot, Inglewood. South Korea v Czechia on the screens.", href: "thursday.html", live: true },
+    { t: "2026-06-11T19:00:00-07:00", now: "AO Night Before Party · confirm on AO socials", d: "The Meeting Spot, Inglewood. South Korea v Czechia (Son Heung-Min) on at 7.", href: "thursday.html", live: true },
     { t: "2026-06-11T23:00:00-07:00", now: "Sleep. Tomorrow is SoFi.", d: "Friday is the USA opener and Quinn's seat is waiting.", href: "friday.html" },
 
     { t: "2026-06-12T09:00:00-07:00", now: "Easy morning", d: "Big day. Canada v Bosnia at noon is the warm-up act.", href: "friday.html" },
     { t: "2026-06-12T12:00:00-07:00", now: "LIVE · Canada v Bosnia", d: "Nine MLS players in red. The league's team, on your TV.", href: "mls.html", live: true },
     { t: "2026-06-12T12:30:00-07:00", now: "Send Quinn off → AO Pre-game Party", d: "1231 District Dr, Inglewood. Tacos, churros, every Outlaw he knows.", href: "friday.html" },
-    { t: "2026-06-12T16:00:00-07:00", now: "QUINN: LEAVE THE PARTY NOW", d: "Seat by 5:00 or the board says your name to an empty chair.", href: "friday.html", urgent: true },
-    { t: "2026-06-12T17:00:00-07:00", now: "QUINN: IN YOUR SEAT · PHONE OUT", d: "The shoutout runs once in the pre-match show. No replay.", href: "friday.html", urgent: true },
-    { t: "2026-06-12T17:30:00-07:00", now: "Pre-match ceremony", d: "Anthems, the show, and somewhere in it: QUINN HOVEY.", href: "friday.html", urgent: true },
+    { t: "2026-06-12T15:30:00-07:00", now: "QUINN: LEAVE THE PARTY NOW", d: "Seat by 4:15 or the board says your name to an empty chair.", href: "friday.html", urgent: true },
+    { t: "2026-06-12T16:15:00-07:00", now: "QUINN: IN YOUR SEAT · PHONE OUT", d: "The shoutout runs once in the pre-match show. No replay.", href: "friday.html", urgent: true },
+    { t: "2026-06-12T16:30:00-07:00", now: "Opening ceremony + pre-match show", d: "Performers, anthems, and somewhere in it: QUINN HOVEY.", href: "friday.html", urgent: true },
     { t: "2026-06-12T18:00:00-07:00", now: "LIVE · USA v PARAGUAY", d: "Quinn at SoFi. Gordon at Gym Bar. One match, two cathedrals.", href: "friday.html", live: true },
-    { t: "2026-06-12T20:00:00-07:00", now: "Final whistle · stay 20 minutes", d: "Let the crowd thin, then Lyft to Gordon's. Or dance: Trinix, Abbey, Sound.", href: "friday.html" },
+    { t: "2026-06-12T20:00:00-07:00", now: "Final whistle · stay 20 minutes", d: "Let the crowd thin, then Lyft to Gordon's. Or dance: The Abbey, Sound.", href: "friday.html" },
 
     { t: "2026-06-13T08:00:00-07:00", now: "Text Mason the birthday meme", d: "First thing. The early text and the toast are two different gifts.", href: "saturday.html" },
     { t: "2026-06-13T10:30:00-07:00", now: "Drag brunch · Hamburger Mary's WeHo", d: "8288 Santa Monica Blvd. Leg glass in Mason's hand early.", href: "saturday.html" },
@@ -55,8 +55,8 @@
       return {
         cls: "",
         label: "Countdown",
-        title: "Opening Ceremonies in " + fmtCountdown(first - nowDate),
-        d: "Thursday 9 AM · US Soccer House, Venice. USA v Paraguay in " + fmtCountdown(KICKOFF_USA - nowDate) + ".",
+        title: "Opening day starts in " + fmtCountdown(first - nowDate),
+        d: "Thursday · US Soccer House, Venice, general doors at noon. USA v Paraguay in " + fmtCountdown(KICKOFF_USA - nowDate) + ".",
         href: "thursday.html"
       };
     }
