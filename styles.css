@@ -1100,3 +1100,32 @@ body { padding-bottom: 96px; }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* Photo heroes (image pass, June 10) — each day keeps its color identity, photo blended under the duotone */
+.hero.hero--photo { background-size: cover; background-position: center; }
+.hero.mexican.hero--photo {
+  background:
+    radial-gradient(900px 480px at 80% 0%, rgba(255, 59, 78, 0.18), transparent 60%),
+    linear-gradient(160deg, rgba(0, 61, 43, 0.93) 0%, rgba(6, 34, 26, 0.88) 45%, rgba(6, 8, 15, 0.96) 100%),
+    var(--hero-img) center / cover no-repeat;
+}
+.hero.usa.hero--photo {
+  background:
+    radial-gradient(900px 480px at 80% 0%, rgba(255, 77, 90, 0.16), transparent 60%),
+    linear-gradient(160deg, rgba(10, 31, 92, 0.92) 0%, rgba(9, 18, 51, 0.88) 45%, rgba(6, 8, 15, 0.96) 100%),
+    var(--hero-img) center / cover no-repeat;
+}
+.hero.party.hero--photo {
+  background:
+    radial-gradient(900px 480px at 75% 0%, rgba(84, 192, 255, 0.14), transparent 60%),
+    linear-gradient(160deg, rgba(92, 15, 60, 0.9) 0%, rgba(34, 10, 38, 0.88) 50%, rgba(6, 8, 15, 0.96) 100%),
+    var(--hero-img) center / cover no-repeat;
+}
+.hero.sun.hero--photo {
+  background:
+    radial-gradient(1000px 520px at 75% -10%, rgba(255, 255, 255, 0.3), transparent 55%),
+    linear-gradient(160deg, rgba(255, 201, 64, 0.9) 0%, rgba(255, 138, 30, 0.86) 60%, rgba(244, 99, 46, 0.9) 100%),
+    var(--hero-img) center / cover no-repeat;
+}
+.hero-credit { margin-top: 26px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255, 255, 255, 0.3); }
+.hero.sun .hero-credit { color: rgba(26, 18, 6, 0.4); }
