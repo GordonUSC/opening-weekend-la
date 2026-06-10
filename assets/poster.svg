@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+<defs>
+  <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0A1020"/>
+    <stop offset="0.55" stop-color="#0D1528"/>
+    <stop offset="1" stop-color="#070B16"/>
+  </linearGradient>
+  <radialGradient id="flood1" cx="0.18" cy="0.05" r="0.7">
+    <stop offset="0" stop-color="#4D7CFF" stop-opacity="0.28"/>
+    <stop offset="1" stop-color="#4D7CFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="flood2" cx="0.85" cy="0.12" r="0.8">
+    <stop offset="0" stop-color="#FFC940" stop-opacity="0.22"/>
+    <stop offset="1" stop-color="#FFC940" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="pitchglow" cx="0.5" cy="1" r="0.9">
+    <stop offset="0" stop-color="#1E9E5A" stop-opacity="0.30"/>
+    <stop offset="1" stop-color="#1E9E5A" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="cream" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFDF7"/>
+    <stop offset="0.6" stop-color="#F4E8C9"/>
+    <stop offset="1" stop-color="#E9C97E"/>
+  </linearGradient>
+</defs>
+
+<rect width="1200" height="1600" fill="url(#night)"/>
+<rect width="1200" height="1600" fill="url(#flood1)"/>
+<rect width="1200" height="1600" fill="url(#flood2)"/>
+<rect width="1200" height="1600" fill="url(#pitchglow)"/>
+
+<!-- pitch perspective -->
+<g stroke="#FFFFFF" stroke-opacity="0.14" fill="none" stroke-width="3">
+  <ellipse cx="600" cy="1490" rx="240" ry="62"/>
+  <line x1="60" y1="1490" x2="1140" y2="1490"/>
+  <line x1="180" y1="1600" x2="305" y2="1380"/>
+  <line x1="1020" y1="1600" x2="895" y2="1380"/>
+</g>
+<circle cx="600" cy="1490" r="7" fill="#FFFFFF" fill-opacity="0.5"/>
+
+<!-- rainbow bar -->
+<g>
+  <rect x="0" y="0" width="200" height="14" fill="#E40303"/>
+  <rect x="200" y="0" width="200" height="14" fill="#FF8C00"/>
+  <rect x="400" y="0" width="200" height="14" fill="#FFED00"/>
+  <rect x="600" y="0" width="200" height="14" fill="#008026"/>
+  <rect x="800" y="0" width="200" height="14" fill="#24408E"/>
+  <rect x="1000" y="0" width="200" height="14" fill="#732982"/>
+</g>
+
+<text x="600" y="200" text-anchor="middle" font-family="Helvetica Neue" font-size="34" font-weight="600" letter-spacing="14" fill="#FFC940">FIFA WORLD CUP 2026 · LOS ANGELES</text>
+
+<text x="600" y="430" text-anchor="middle" font-family="Arial Black, Helvetica" font-size="180" font-weight="900" letter-spacing="2" fill="url(#cream)">OPENING</text>
+<text x="600" y="610" text-anchor="middle" font-family="Arial Black, Helvetica" font-size="180" font-weight="900" letter-spacing="2" fill="url(#cream)">WEEKEND</text>
+
+<line x1="430" y1="680" x2="770" y2="680" stroke="#FFC940" stroke-width="3" stroke-opacity="0.7"/>
+
+<g font-family="Helvetica Neue" text-anchor="middle">
+  <text x="600" y="780" font-size="40" font-weight="700" fill="#FFFDF7">THU 11 · Mexico opens the Cup · Venice</text>
+  <text x="600" y="850" font-size="40" font-weight="700" fill="#FFFDF7">FRI 12 · USA v Paraguay · Quinn at SoFi</text>
+  <text x="600" y="920" font-size="40" font-weight="700" fill="#FFFDF7">SAT 13 · Mason's birthday · Hamburger Mary's</text>
+  <text x="600" y="990" font-size="40" font-weight="700" fill="#FFFDF7">SUN 14 · FIFA Game launch · Pride parade</text>
+</g>
+
+<g font-family="Helvetica Neue" text-anchor="middle">
+  <text x="600" y="1110" font-size="30" font-weight="500" fill="#9FB0D0" letter-spacing="4">GYM BAR HQ · AMERICAN OUTLAWS · THE BRUNCHETTES</text>
+  <text x="600" y="1170" font-size="30" font-weight="500" fill="#9FB0D0" letter-spacing="4">FOUR DAYS OF FOOTBALL, FAMILY, DANCING, AND GAMES</text>
+</g>
+
+<image x="280" y="1238" width="96" height="56" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABbCAMAAADDRH7FAAAA2FBMVEX///8AaEfOESaqzMHvrrX8/PtSMh/39/VqOR1xSi3FyKju7uiOXTVkQy2seEaUmV+Kj1Lr5duhpHHQ07m8vpcxh4lBKBq6iFGjazne28eDUjLAmGb3577i4NX78+CHRiKsr4OBa1zQolwdfYCgjYLguka0tolkoKGZWivVzcfjz5CTfGmCh0e1n5I+v9mK0OHoyHDpmU3x3aF3W0jNrHzNupoZdHdck5Hf5+h6rqamtLHD1NK62uWXZkX2qFXmbG3awqrskIxTUUb0pKP6wsRPfXLjto3oeo0FJmBhAAADyElEQVRo3u3YV2/jOBAAYO45FNV7782ybEu23FucOG3z///RjvaAez7kRXrgQLYAwYA+DDlDmujXT2KCfhBP//wkEAVSIAVSIAVSIAVSIAVSIAVSIAVSIAVS4FiAWDi0D228QBzcg1yu76UwSqAWEzlhkzqp67qd41EBMUb4cAgej7nrJ6zN1rIsjAkYmSE67AM5z5cH101shmEkPxoPEJu8MHccX3RkPwMgY4sgFKPxZLAyhEWXB77suH7dZ1BkGZa5C6MBmmm3zfMucHJn50MGGY4FIVuOBigYi+m0Q3sYYlYCoGjbAJREbURtxlP2UQ5A308YjoMB9mGcy1EASd/xokrX2n2wFBmbZUXGTVxRdNlkPgJgPO0i5JmmgGXZFTkbKoSTRdFnai65l2PIYLg1BT0lSHCD2hFtxk5qF5CsyNX+chRzkPB8eoC748gONEBGDhLwwTzk2N0ogJ4pVAHxtIPvMhIjuvcMlYeM87MdMzgQWjFGEa/xTj6dxjvIGefINoNIWy7LLJP6ISYDAk0FoS1GBm94+8O0C3aSK8qMbbco0tolAK9Q4zoeDMiruoa0TYTMCndZkO8djoMyllgpExC5Zrv3OdJ4NR0MmDYVRh8fn8gw91OIPJAZSYI2zXASdMDrMvNQpCrKYEBDNWKE3r4nWpU2WbeHRuj3qzDT13CL5i3srImq8IMBQ5NfIHQ7FrMzil9iFLVtO5dgNyhJjMTtIr5EeGt6w81BeDu8/FYU1vUcvX3++7DkdtmuF0rvIYxzvNiGA7YZ3oMmMiuKy+n0ejufrldI697ptDIry/nbol+j+SH7oKcrKtwms9nxaFknCz7vfbV0HhJuH69PSNCb1BgQiCtV+bvnmxTHAnjwdXpvZpfm/Tazvj8JMlVVwUOuJJ7eeDGKQ4Gcz2erKIqj9XU6WsXsYhUWlLChqvywa7GWLqAGtvxaeF6Ty2wGF2QRUnm04Edb778BHgoYd1VfBni9Wq+e9/nv37Pi64Hw7WpECEdoscVD72ZinDY8eV6vIIKXzebrl5Ov12vIK9F1hcRk8O2WoKuNgQkm67/AzcuLvlo/g6svEGMM+0ENJGEYh5NVsOmFm2C1eiZhrCuKjkfxp8ngKz7EMcaPcrlc3pcp4VONLEzew2M5+ugWeqoovAZzcSIQpKuqboZbPJ6jD+yZitKoimle3nSjahpFNxAZ1fkgNgyzitLL5PWNN3QljcZ4gEnQZf59evpAWBjrETDRyPlGT/kpkAIpkAIpkAIpkAIpkAIpkAIpkAIpkAL/Z/wBeFSgpx4+6xIAAAAASUVORK5CYII=" opacity="0.95" rx="4"/>
+<image x="392" y="1238" width="96" height="56" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABrCAMAAADHPnloAAAAdVBMVEUAd0kAFIngPDH///8AAAD/uBy/3dHobWU/Tqf+/v4Iek3Z6+TRlhYvIgSAXA4ykWzxtB4cfkNfjzjzsq6LwayCmDL17vE1hD+Gvqg3lHAOIZDIqiXaryKypSmPmMviQjiqsNje4PD74+FPXa7jSkCOwq5+Ww0alKU9AAACW0lEQVR42u3bC1LCMBSF4VtJhVQRRAVFRQVl/0uUUuiTtHnfM45nBf98k4G2FKLuZjejag/fV6yjS8ueZVW4HOMFIiEqAnEQSTkQRHUgCCL1DQGxNxABkQbGjjgUyI5Iw+NF1AjkRaSMsBHpbYWNSGn6ZIH4ETMwhUbMAw+IBItYBAIjngItTqKMg1gG2iBuxzEDbU6iDI9It7VCTcTHmIgk7lJoRBJiCo14CBTQiMdAR0QpAyIWgcCI58Am4isOYhlohfgSHrEW2DqJ9xiI9UBXRBkCsRnYOomGiDIEYivQEVH6R+wEoiF2A5uIc0NE6RvxUqAV4o+sCrdjf7sY2EJcGCOOvE0qAp0QfU4Z6IbocepADMQeQQzE/kAAxIFAO8RrnxsKbCK+ayH6nRicBWLcQGZEoTNORK1ATkShOTZE3UA2RKE/HkSDQB5EYTQGRLNAMZ3XEhfggivwM5jBncF9fD77z8Hs/5vkb30Xg1/NoF8Pgl9Ro9+TgN/VWfBFvS8Gf7LAz9cfuMd+uuX0pDqCIMjDQVWgI5/82k28jfzzyU3iceSfb5IEDYTi6waC8XUCXX5jCsHXCnT97PPP1wx0/cV9s05CBkLy1QJd3/oIw1cGur3yEY7vHAjLVwQC8x0DkfnyQMdX38Ly5YHQfI1Ai3dYg/PVAy1epQ7PVwWC8pWBFq/zR+E7BeLyFYEWp+9znUQLNOeTy2h8eWBmfM8bkS8PNObbJQlY4IyPTyeQlU8jkJdvMJCbbyiQna8/sPkPJha+3kAEvp5ADD51IAifKhCGTxGIw3fYL4FtmHbJ4VX7AAAAAElFTkSuQmCC" opacity="0.95" rx="4"/>
+<image x="504" y="1238" width="96" height="56" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABUCAMAAAAyEswQAAAAQlBMVEX///8KMWGzGULsxtDZjKFCYIURN2YdQW0sTnd2jKezobRbdZWntce+yNWFmbHl6e/K0t3W3eX29/lNaYyaqr7rxc9T6EpSAAAB7klEQVRo3u2ZzXKDMAyEpSa2oQb/Qd7/VXvAwkxLTQuDQjLakyd78I4tf2gUwIP6OFnwGgHtvF/TzMvyY83nCKhsVNO+Ro2jMlMSFa2aklR9loARumlXbFNqp5XpIFLAms9yxaFzdIMh0B26LtBl1nyOgNpgg4gGERtcLI1G1Lru4/1kLV5xp2mlu/IS7IqPxUc4W7SR6lPI5dWG1KtcaN7n8lv1OQNiCz0te8hR0ACYms8Z0Nn54jpLj2Jwbvjh6+JzBbSIqBH1BOJptfjxd58n4CFQswT00BOIgcrL9OApYM3nAXWkom+8JxC3sYC64rOAWuGQ6auMUXk5oCJQV3zOduvvoF74fAH3gprvBHeCmi/gKoi3Qc3TLAionwhqlm/xEVBzBDwEar52a2dHfTtXDwH1GaD+V0fNN/rYCWoZfbx9R82BmfcDtX7K6MOlMV+kHZObyk+7EJyZffvd550sQMhHZAIQ51RKquazBmzLl6JdBfWK/wKjD5ZmoYnlHMvZxHleXvM5ONgmYrLpgMbRygONo6s+C6h7vwZiX2qu4rOMPgakl5BBjIg44JBfbdWXf5ouH/DzoE7HjEgk2tDjdmk94OPikoASUAJuBbw8ZkQi0YbuF5eAWgJKwJcPKBKJpFmQZkECSkAJWNMXoKFkunVTetAAAAAASUVORK5CYII=" opacity="0.95" rx="4"/>
+<image x="616" y="1238" width="96" height="56" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABYCAMAAABF0AxrAAAAZlBMVEX////r7Ou0tLTS0tL1ycb6+vrBwcHVKx4AOKi/zemsrKzKy8rZ2dmSlJPi4uJDhlv09fDi5ePc3dwgdD+GhoaRvKHg4OBwqoay0b2enp68vLzx2C7F283t46Fzc3M+Pj5eXl5cnHXu8UJoAAABoklEQVRo3u3XaY4dIQwE4DLEzoTlQUM3vb/l/pfMn+QMY2lcJ/gk5MLGb+WBAQ1oQAMa0IAGNKABDWhAAxrQgAY0oAG/D/hLeWDRFPbinHhWyqMwO/FR3BxIo+/Ijaml1IhbFn2+EDHSlI/nMaWB6NT5hL3f8Q55Hil7FmXCI7Lf41PG9Bg+hD1yVPXKlOFDdg+qwLRdx1sisqZJCW24eFzLegFLL1FeYbSgqP9mjiGntawM8FJ6CLPwrKcPvaP9FadeCLUCa8/+2ch5NUCRtoe09o35vpm5lBhCEz1j4nwK+bGUrZ7nedZaug+SFHWhi2mnx9IX0HlW1PIZz6wJKNLmvV2l8H3fN7ZS2q7qib0j94q89o0BprWX4+U0DQnPfOQwTZ91A6j0tXkkTTWD0MbzPWhbluX69BKH5JEUFTUoQ4AxYbm2dbQBKPvqIJE9QL6NkTwBXtmyADhhT0AlqgDpW7cAFzHSRLXWh8qFFZCc/q/8SePK/+9oinqPJv1n50/NH+XBl/IY0IAGNKABDWhAAxrQgAY0oAENaEADGvD78hcuoC0qGGZHTQAAAABJRU5ErkJggg==" opacity="0.95" rx="4"/>
+<image x="728" y="1238" width="96" height="56" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABwCAMAAACuL4swAAAAYFBMVEUAlED/ywAwJoE8oTH0xwQ+M4IZmTndwwn+//69vBBXRWhNRJKYtRrP5dyu3MJzW1dmqibOzd+R0K2AsCCaekGJg7fn8+7ktxtbuoRgWJ66ts+hncXPpR21kDBzxJZ1bqp8YzMJAAAEJUlEQVR42u1b23KEKBDVHkk6MsCAinj//7/cB2c3GQcUEy/UluctVSmn60AfT1+MogsXLly4cOHChQNxu4UdXxYnWcj0fcZxHH+GSuLHPX7i/hEufSMCJPHjK37BV2AkPpJ4guQRMH2hkZglsRWBKM7P5JgihGS5x3NI7gHTFwCJH/fYA+fJ9iOJvXCS4ti1xY4zFOeNvjIXIk0B0lSIvDybxNvXNLoUXpBOY/w6NFmy1x/vJtE9Y+xe/ys7S1taa3gAAGl7huJMtMUdHgCAaA9XnAl9OSwgP5bEibYkAhYhkgMVZ6ItZQoeSMujFGcqzS0BL5D2GNme2r4kBU+kyQFG8d23CPCG2N/jvPuWHFYg39koWmxfCatQ7mkUrbZPrAtQ7GgUrbavg5Xo9jKKdtuXkLUBpjsZRYdr7oqmlooxrpFxJqWsi4GuzJMtSLw5XHOiVY89V5wbNL1W6oaIWrO6qNxyXTrc9h+SJXNZ+JJxpU3POTdoFCpjENEojciYbAYAgOItwtb1tGw7bfkXNRqFDJlmGrlijHNE7Bki9qxHrhtKdOF3xr9WnNmSUtZNMVQVpQSAUEqroaglU4jYK85Ur7UciF+a/FZxZityh0jTqpEaUY0XUzdkUax/TeJCSZkDQMPsSlM1EjkqznSPDfU847WKs1SRCwAopDtfC8k5Ksa0qunC2+Q3irNckS+/5kghteGG9fjjoMU29X223NDwMoJVjdxwblThkyXeRnG5XRXHscd7ThIAWjPsFUP2VG/i8eilZPFqV8U+Nn/M61pxZIbX459enab7BgFOGaSNk9NKojJ8JJF4Pfy+wRFP7yCVM1wW3Gje88bnDnrp4VZJ8n3aNfaGoSSbJMlfZYYQO4nYG5Zv1kZcEurveml4y17raVOpFWf1do3YBRKffp9aAgRHujRKYbllF9bDLFA9DY8Wo0LbIhwQNzQLS3ZrzJKCvsmNO0Co5NaTgBkSc4D/vP1LlMXqouRPJbLT8rffZoa+2C5bSUJ1BaQh21v+ORLJYlb8TBAK0DjfI3/srjtk+1toJveQ2uKtdis7PQp3SZZ1kA0AJNltwrOq9UGpw9ns1vpwkPize0nYMHsFpcOsbtjzf3zOUvjWT6jq8XbWBTSUECuB2/YwLbI9V5gQAgBjwTSquVhr+zZQHJ8RxFBYRxE7zUuyeEUTvZIEAJr6uCa6bcRJ5upOd19rx1nO2kHOMBw6yPEZhb3qYDEcPAp7JzFfsvwHDxMt41gR2Dg2/IG2pb4PbSXAIttlJ14uHxHdqUsVVqPYdrlICUlF3rUh7PaEvtgTBb8a5U3iqTvBj7DX86LlDb2zFxyj8FdEZ+r7cNb6b4GvKUfBL3pH4a/KT0gM84uN0D/XiIL/4OVpFEP+ZCgK/6OrCxcuXLhw4cL/Df8AzA1J5xLwFRAAAAAASUVORK5CYII=" opacity="0.95" rx="4"/>
+<image x="840" y="1238" width="96" height="56" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABrBAMAAAACzpRpAAAAG1BMVEXBJy0AYjMtUzFlQi8TWzKhMC2JNy60Ki1HTDCzjW8/AAABp0lEQVQYGe3BP2vbQBzH4U8tS87Yr+78Z7RMglcdhc6+QkNHOfQFyJChY+wlHmMo9duuME1ooZPvN5Ryz0OWZVmWZdm/r+yxdfOCrfEGW9sptoLDVvSYKqUOS4XUYmlUxyWWti5MsRSmW4elZjOuMVSqLfSEnUJdqRY7Iw9xiZ39Ak5z7IQZ7Bx2mg2Ma1IdV6/0abW61erVmSud9FcLrlVFfVoNGq0GqleDW/meqz3IMdgvGJzmDILuuN4kaA3sZgx2M+AgR4oq+h5O7xm8W0AVfU+SgxwTvTC4EQStSRR0V6lnUKl/kCNVGfVNTwwm+iHfkewoLbg4SWcMBDkugmZYKKNaBoV8h4mo+gkmjTwmKn3XPTzqi3os3Oi5UVuoftYLFsY1hepGLc0GCzsHj9I9hCkWwhyO0hn2DgtxSRkl3zHyGCjVEvT5qxyFOtIV6g5aMDlpXaol3biuonqo5PtmSbqtC7pj8CAXpqQLXo6LoOhI18j3XFRRNclKac0vB6kjVSHHm6CWVCPf8aaMS1Ltz/zmOCfVB/7wEWMTsizLsizLsv/ZT7skOtOc2y+QAAAAAElFTkSuQmCC" opacity="0.95" rx="4"/>
+
+
+<text x="600" y="1390" text-anchor="middle" font-family="Helvetica Neue" font-size="38" font-weight="700" letter-spacing="6" fill="#FFC940">GORDON + QUINN · JUNE 11–14, 2026</text>
+</svg>

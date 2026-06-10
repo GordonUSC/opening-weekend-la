@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Play · Penalty Kicks + Bingo + Predictions · Opening Weekend LA</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;700&family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles-v1.css">
+</head>
+<body>
+
+<div class="rainbow-bar"></div>
+<div class="flag-bar"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">Opening Weekend<span class="dot">·</span><span class="sub">Gordon + Quinn · June 11–14, 2026</span></a>
+    <nav class="primary">
+      <a href="index.html">Home</a>
+      <a href="thursday.html">Thu · Mexico</a>
+      <a href="friday.html">Fri · Quinn @ SoFi</a>
+      <a href="saturday.html">Sat · Dance</a>
+      <a href="sunday.html">Sun · Mason + Game</a>
+      <a href="play.html" class="current">Play</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero play">
+  <div class="wrap">
+    <div class="eyebrow" style="color: var(--gold);">Because you both spent your lives in games</div>
+    <h1 class="display"><span class="accent">Play</span> the weekend.</h1>
+    <p class="lede" style="margin-top: 24px;">A penalty shootout you can actually take. A Watch Party Bingo card to mark as the weekend unfolds. Predictions to lock in. Achievement badges you can unlock with one tap. This page remembers your progress.</p>
+  </div>
+</section>
+
+<!-- Penalty -->
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Level 1 · Penalty shootout</div>
+    <h2 class="display">5 kicks. Choose your corner.</h2>
+    <p class="lede" style="margin-top: 16px;">Tap left, center, or right. The keeper guesses. Score 5 of 5 to earn the Penalty King badge.</p>
+    <div class="penalty-game">
+      <div class="penalty-stage">
+        <div class="goal"></div>
+        <div class="keeper" id="keeper"></div>
+        <div class="ball" id="ball"></div>
+      </div>
+      <div class="penalty-score" id="penaltyScore">0 / 5</div>
+      <div class="penalty-msg" id="penaltyMsg">Aim left, center, or right.</div>
+      <div class="penalty-controls">
+        <button class="kick-btn" onclick="takePenalty('left')">⬅ Left</button>
+        <button class="kick-btn" onclick="takePenalty('center')">⬆ Center</button>
+        <button class="kick-btn" onclick="takePenalty('right')">Right ➡</button>
+        <button class="kick-btn reset" onclick="resetPenalty()">Reset</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bingo -->
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Level 2 · Watch Party Bingo</div>
+    <h2 class="display">Mark the moments. Get a row. Earn a badge.</h2>
+    <p class="lede" style="margin-top: 16px;">Tap any square the moment it happens across the weekend. Five in a row in any direction unlocks the Bingo Boss badge.</p>
+    <div class="bingo">
+      <div class="bingo-cell" onclick="toggleBingo(this)">Sing Cielito Lindo</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Spot a Lucha mask in the crowd</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Chant U-S-A</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Spot Pulisic on a poster</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Trade pins at Soccer House</div>
+
+      <div class="bingo-cell" onclick="toggleBingo(this)">Eat a taco at the Coliseum</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Spot Mariachi Arcoiris</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Send Quinn a selfie</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Drink a Modelo</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Capture a goal-celebration video</div>
+
+      <div class="bingo-cell" onclick="toggleBingo(this)">Hug Mason</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Wave a USMNT flag</div>
+      <div class="bingo-cell free">FREE<br>VENICE SIGN PHOTO</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Hear Steve Aoki play</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Score on the FIFA demo</div>
+
+      <div class="bingo-cell" onclick="toggleBingo(this)">Spot a vuvuzela</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Walk the Venice boardwalk</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Get a free Soccer House card</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Cheer Mexico's first goal</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Cheer USA's first goal</div>
+
+      <div class="bingo-cell" onclick="toggleBingo(this)">Hear Capital Cities live</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Spot a Mexico jersey on Hollywood Blvd</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Send Caryn a thank-you note</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Toast Mason at brunch</div>
+      <div class="bingo-cell" onclick="toggleBingo(this)">Play the new FIFA game</div>
+    </div>
+  </div>
+</section>
+
+<!-- Predictions -->
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Level 3 · Predictions</div>
+    <h2 class="display">Lock in. Be brave.</h2>
+    <p class="lede" style="margin-top: 16px;">Pick the winner of every opening-weekend LA-adjacent match. Get them all locked in to unlock the Predictor Pro badge.</p>
+    <div class="prediction-grid">
+      <div class="predict-card">
+        <div class="match">Thu · Mexico v South Africa</div>
+        <div class="options">
+          <div class="opt" onclick="choosePredict(this.parentElement.parentElement, this)">🇲🇽 Mexico</div>
+          <div class="opt" onclick="choosePredict(this.parentElement.parentElement, this)">Draw</div>
+          <div class="opt" onclick="choosePredict(this.parentElement.parentElement, this)">🇿🇦 RSA</div>
+        </div>
+      </div>
+      <div class="predict-card">
+        <div class="match">Fri · USA v Paraguay</div>
+        <div class="options">
+          <div class="opt" onclick="choosePredict(this.parentElement.parentElement, this)">🇺🇸 USA</div>
+          <div class="opt" onclick="choosePredict(this.parentElement.parentElement, this)">Draw</div>
+          <div class="opt" onclick="choosePredict(this.parentElement.parentElement, this)">🇵🇾 PAR</div>
+        </div>
+      </div>
+      <div class="predict-card">
+        <div class="match">Sat · Brazil v Morocco</div>
+        <div class="options">
+          <div class="opt" onclick="choosePredict(this.parentElement.parentElement, this)">🇧🇷 Brazil</div>
+          <div class="opt" onclick="choosePredict(this.parentElement.parentElement, this)">Draw</div>
+          <div class="opt" onclick="choosePredict(this.parentElement.parentElement, this)">🇲🇦 Morocco</div>
+        </div>
+      </div>
+      <div class="predict-card">
+        <div class="match">Sun · Netherlands v Japan</div>
+        <div class="options">
+          <div class="opt" onclick="choosePredict(this.parentElement.parentElement, this)">🇳🇱 NED</div>
+          <div class="opt" onclick="choosePredict(this.parentElement.parentElement, this)">Draw</div>
+          <div class="opt" onclick="choosePredict(this.parentElement.parentElement, this)">🇯🇵 Japan</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Achievements -->
+<section class="section">
+  <div class="wrap">
+    <div class="eyebrow">Achievements</div>
+    <h2 class="display">The trophy case.</h2>
+    <p class="lede" style="margin-top: 16px;">Some unlock automatically from gameplay. Some are weekend missions — tap to mark complete when you do them. Your progress saves to this device.</p>
+    <div class="badges">
+      <div class="badge" data-badge="penalty-king" onclick="toggleBadge(this)">
+        <span class="badge-icon">⚽</span>
+        <div class="badge-title">Penalty King</div>
+        <div class="badge-desc">Take 5 kicks</div>
+      </div>
+      <div class="badge" data-badge="bingo-row" onclick="toggleBadge(this)">
+        <span class="badge-icon">🎯</span>
+        <div class="badge-title">Bingo Boss</div>
+        <div class="badge-desc">Five in a row</div>
+      </div>
+      <div class="badge" data-badge="predict-pro" onclick="toggleBadge(this)">
+        <span class="badge-icon">🔮</span>
+        <div class="badge-title">Predictor Pro</div>
+        <div class="badge-desc">All 4 picks locked</div>
+      </div>
+      <div class="badge" data-badge="venice-day" onclick="toggleBadge(this)">
+        <span class="badge-icon">🏖️</span>
+        <div class="badge-title">Venice Day</div>
+        <div class="badge-desc">Thursday with Quinn</div>
+      </div>
+      <div class="badge" data-badge="quinn-sofi" onclick="toggleBadge(this)">
+        <span class="badge-icon">🏟️</span>
+        <div class="badge-title">SoFi Sender</div>
+        <div class="badge-desc">Quinn shipped to the match</div>
+      </div>
+      <div class="badge" data-badge="caryn-thanks" onclick="toggleBadge(this)">
+        <span class="badge-icon">💌</span>
+        <div class="badge-title">Caryn Thanked</div>
+        <div class="badge-desc">Note sent before Sunday</div>
+      </div>
+      <div class="badge" data-badge="dance-floor" onclick="toggleBadge(this)">
+        <span class="badge-icon">🪩</span>
+        <div class="badge-title">Dance Floor</div>
+        <div class="badge-desc">Friday or Saturday</div>
+      </div>
+      <div class="badge" data-badge="mason-toast" onclick="toggleBadge(this)">
+        <span class="badge-icon">🥂</span>
+        <div class="badge-title">Mason Toast</div>
+        <div class="badge-desc">Birthday brunch landed</div>
+      </div>
+      <div class="badge" data-badge="fifa-played" onclick="toggleBadge(this)">
+        <span class="badge-icon">🎮</span>
+        <div class="badge-title">FIFA Played</div>
+        <div class="badge-desc">Hollywood Blvd demo</div>
+      </div>
+      <div class="badge" data-badge="full-weekend" onclick="toggleBadge(this)">
+        <span class="badge-icon">🏆</span>
+        <div class="badge-title">Full Weekend</div>
+        <div class="badge-desc">All four days lived</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="made">Made for Gordon &amp; Quinn · A weekend that plays back</div>
+    <div><a href="index.html">← Home</a></div>
+  </div>
+</footer>
+
+<script src="game.js"></script>
+</body>
+</html>

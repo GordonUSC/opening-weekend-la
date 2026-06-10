@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design Review · v1 vs v2 · Opening Weekend LA</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@700&family=Cormorant+Garamond:ital@0;1&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #14161F; --paper: #F4F1E9; --line: #DCD6C6;
+    --gold: #C8901A; --red: #C73E4A; --green: #1F7A57; --blue: #2C4E9E;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--paper); color: var(--ink); font-family: "Inter", system-ui, sans-serif; font-size: 16px; line-height: 1.6; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 28px; }
+  header { padding: 64px 0 40px; border-bottom: 3px solid var(--ink); }
+  .kicker { font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 800; color: var(--red); margin-bottom: 14px; }
+  h1 { font-family: "Bebas Neue", sans-serif; font-size: clamp(48px, 8vw, 104px); line-height: 0.92; text-transform: uppercase; }
+  h2 { font-family: "Bebas Neue", sans-serif; font-size: clamp(30px, 4vw, 52px); text-transform: uppercase; margin-bottom: 8px; }
+  .lede { font-size: 19px; max-width: 64ch; margin-top: 18px; color: #3B3E4A; }
+  section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+
+  .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 28px; }
+  .pane { background: #FFF; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(20,22,31,0.08); }
+  .pane .tab { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 800; border-bottom: 1px solid var(--line); }
+  .pane.old .tab { color: #8A8470; }
+  .pane.new .tab { color: var(--green); }
+  .pane .tab .chip { font-size: 10px; padding: 4px 10px; border-radius: 999px; border: 1px solid currentColor; }
+  .pane iframe { width: 200%; height: 1240px; border: 0; transform: scale(0.5); transform-origin: 0 0; display: block; }
+  .pane .frame-box { height: 620px; overflow: hidden; }
+
+  .note { font-family: "Caveat", cursive; font-size: 24px; color: var(--red); margin-top: 14px; }
+
+  .lessons { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 18px; margin-top: 32px; }
+  .lesson { background: #FFF; border: 1px solid var(--line); border-left: 5px solid var(--gold); border-radius: 10px; padding: 22px 22px 24px; }
+  .lesson.red { border-left-color: var(--red); }
+  .lesson.green { border-left-color: var(--green); }
+  .lesson.blue { border-left-color: var(--blue); }
+  .lesson .role { font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; font-weight: 800; color: var(--gold); margin-bottom: 8px; }
+  .lesson.red .role { color: var(--red); }
+  .lesson.green .role { color: var(--green); }
+  .lesson.blue .role { color: var(--blue); }
+  .lesson h3 { font-family: "Cormorant Garamond", Georgia, serif; font-size: 26px; line-height: 1.1; margin-bottom: 10px; }
+  .lesson p { font-size: 14.5px; color: #3B3E4A; }
+  .lesson p + p { margin-top: 10px; }
+  .lesson .was { color: #8A8470; }
+  .lesson .now { font-weight: 700; }
+
+  table { width: 100%; border-collapse: collapse; margin-top: 28px; background: #FFF; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  th, td { text-align: left; padding: 14px 18px; border-bottom: 1px solid var(--line); font-size: 14.5px; vertical-align: top; }
+  th { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; background: var(--ink); color: var(--paper); }
+  td:first-child { font-weight: 800; width: 190px; }
+  tr:last-child td { border-bottom: none; }
+
+  footer { padding: 48px 0 72px; font-size: 14px; color: #6B6E7A; }
+  @media (max-width: 900px) { .duo { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="kicker">Design review · June 9, 2026 · Built to teach, not just to show</div>
+    <h1>Same words.<br>New light.</h1>
+    <p class="lede">Left is the site I made you before. Right is the rebuild. Not one fact changed. Every word is identical. The only thing that changed is craft, and that's the lesson: design is the staging of information, the way an emcee is the staging of a story. Scroll the panes. They're live.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Exhibit A</div>
+    <h2>The home page</h2>
+    <div class="duo">
+      <div class="pane old">
+        <div class="tab">v1 · Before <span class="chip">Daylight handout</span></div>
+        <div class="frame-box"><iframe src="index-v1.html" title="Old home page"></iframe></div>
+      </div>
+      <div class="pane new">
+        <div class="tab">v2 · After <span class="chip">Night match</span></div>
+        <div class="frame-box"><iframe src="index.html" title="New home page"></iframe></div>
+      </div>
+    </div>
+    <p class="note">Same HTML file on the right. Only the stylesheet changed. One lighting rig, six rooms.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Exhibit B</div>
+    <h2>The play page</h2>
+    <div class="duo">
+      <div class="pane old">
+        <div class="tab">v1 · Before <span class="chip">Flat field</span></div>
+        <div class="frame-box"><iframe src="play-v1.html" title="Old play page"></iframe></div>
+      </div>
+      <div class="pane new">
+        <div class="tab">v2 · After <span class="chip">Under floodlights</span></div>
+        <div class="frame-box"><iframe src="play.html" title="New play page"></iframe></div>
+      </div>
+    </div>
+    <p class="note">The penalty stage now has a night sky, crowd shimmer, mowed stripes, and a netted goal. Locked badges are dim and gray; unlocked ones glow and shimmer. A trophy case should make you want the trophy.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">The teaching · in your roles</div>
+    <h2>What actually changed, and why</h2>
+    <div class="lessons">
+      <div class="lesson">
+        <div class="role">The Emcee · Hierarchy</div>
+        <h3>One voice at a time</h3>
+        <p class="was">v1 gave every card the same volume: same cream box, same colored stripe on top. Six speakers, one mic, all talking at once.</p>
+        <p class="now">v2 runs it like your run-of-show. Headlines get gradient ink and a spotlight shadow, body copy steps back to 72 percent brightness, and color only speaks when it has a line. The eye knows who has the mic.</p>
+      </div>
+      <div class="lesson red">
+        <div class="role">The Host · Atmosphere</div>
+        <h3>Light the room, don't paint it</h3>
+        <p class="was">v1 used color as paint: flat fills, one-direction gradients. That's daylight fluorescent. It's why it felt like a handout.</p>
+        <p class="now">v2 uses color as light: a dark stage, floodlight glows in the corners, film grain so the dark feels like air, glass panels that blur what's behind them. It's the difference between a venue at 2 PM and the same venue at 8:55 PM before kickoff.</p>
+      </div>
+      <div class="lesson green">
+        <div class="role">The Officiant · Timing</div>
+        <h3>Motion with intent</h3>
+        <p class="was">v1 had hover lifts and nothing else. No entrance, no ceremony.</p>
+        <p class="now">v2 staggers the hero: eyebrow, headline, lede, meta cards rise in sequence a tenth of a second apart, the way you pace a vow. Itinerary times got glowing timeline nodes. Unlocked badges shimmer. And it all respects reduced-motion settings, because a good officiant reads the room.</p>
+      </div>
+      <div class="lesson blue">
+        <div class="role">The Game Designer · Feedback</div>
+        <h3>Juice the verbs</h3>
+        <p class="was">v1's bingo marks just changed color. The buttons were flat. You and Quinn have shipped games; you know that's unrewarded input.</p>
+        <p class="now">v2 adds game feel: marked bingo cells stamp gold, tilt, and get a checkmark. Kick buttons glow on hover and compress on press. Tickets have punch-holes. Every action pays the player.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Beyond this site</div>
+    <h2>The same lens on past work</h2>
+    <p class="lede" style="margin-top:0;">These four crafts (hierarchy, light, timing, feedback) are a rubric. Here's how I'd apply them to things I've already built you, so you can hold me to it.</p>
+    <table>
+      <tr><th>Past work</th><th>Honest critique of v1</th><th>What the v2 treatment would do</th></tr>
+      <tr>
+        <td>Wiscago Pride site</td>
+        <td>Same flat-card template as the old WC site. The people pages read like rosters, and every family member got identical visual weight.</td>
+        <td>Give each Francksen a portrait-poster hero in their own palette (Crystal's could nod to Ahsoka's blue and white), let the boys' page feel like a game manual, and stage the weekend itinerary as a glowing timeline. Family site, festival energy.</td>
+      </tr>
+      <tr>
+        <td>Hasbro deck + one-pager</td>
+        <td>Solid structure, safe visuals. The Dragon Table photo is the single best asset and it sits in a frame like a slide insert.</td>
+        <td>Make the Table the stage: full-bleed photo with a dark gradient scrim and the headline set over it in light. One hero asset, lit properly, beats six balanced boxes. (I won't touch it without your go, it's already in Eric's hands.)</td>
+      </tr>
+      <tr>
+        <td>Hall bathroom visualization</td>
+        <td>Informational, but flat lighting made materials hard to judge, which is the whole point of a bathroom viz.</td>
+        <td>Render each option as a lit vignette: warm light pass and daylight pass per palette, so you compare moods, not swatches.</td>
+      </tr>
+      <tr>
+        <td>Claude world map</td>
+        <td>Strong data, default cartography.</td>
+        <td>Night-earth treatment: dark basemap, data as light. Same principle as this rebuild, points that glow instead of dots that sit.</td>
+      </tr>
+    </table>
+    <p class="note">Pick any row and I'll rebuild it next. Side by side again, so you can judge.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">How to read my work from now on</div>
+    <h2>Your four questions</h2>
+    <p class="lede" style="margin-top:0;">When I hand you anything visual, audit me with these. They map to roles you already master, so you don't need design vocabulary to direct me precisely.</p>
+    <div class="lessons">
+      <div class="lesson"><div class="role">Ask 1</div><h3>"Who has the mic?"</h3><p>If you can't tell what to read first, hierarchy failed. Send it back.</p></div>
+      <div class="lesson red"><div class="role">Ask 2</div><h3>"What time of day is this room?"</h3><p>If the design has no lighting mood, it's a handout. Name the mood you want and I'll relight it.</p></div>
+      <div class="lesson green"><div class="role">Ask 3</div><h3>"Where's the ceremony?"</h3><p>If nothing enters, reveals, or lands, the page has no timing. Even one staged entrance changes everything.</p></div>
+      <div class="lesson blue"><div class="role">Ask 4</div><h3>"Did the click pay me?"</h3><p>Every interactive element should reward the touch. You've known this since your first credit. Hold me to game-industry standards.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Design review prepared for Gordon Bellamy · Opening Weekend LA, v2 · All v1 files preserved (styles-v1.css, index-v1.html, play-v1.html)</div>
+</footer>
+
+</body>
+</html>
